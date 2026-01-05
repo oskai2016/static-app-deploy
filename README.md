@@ -1,1 +1,1 @@
-Hello Static app
+Hello world  Static app
